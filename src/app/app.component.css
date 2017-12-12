@@ -21,25 +21,38 @@
   background-color: aqua;
 }
 
-.header-content-wrap {
-  display: flex;
-  flex-direction: column;  
-  justify-content: flex-start;
+.header-content-wrap{
   margin: 0 auto;
-  position: relative;
+  position: absolute;
+  width: 100%;
   height: 80vh;
   background-color: red;
 }
 
-.header-content-wrap span {
-  display: flex;
-  flex-direction: row;  
-  justify-content: center;
+/* .header-content-wrap span {
+  width: 100%;
+  height: 100%;
   background-color: red;
+} */
+
+
+.header-content-wrap .plantImgWrap, 
+.header-content-wrap .glassesImgWrap,
+.header-content-wrap .imacImgWrap {
+  width: 100%;
+  background-color: aquamarine;
+}
+
+.header-content-wrap .plantImg{
+  position: relative;
+  float: left;
+  /* margin: 250px 10px 0px 0px; */
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
 }
 
 .header-content-wrap .imacImg{
-  float: left;
   width: 300px;
   height: 300px;
   background-color: blue;
@@ -47,7 +60,7 @@
 
 .header-content-wrap .glassesImg{
   float: left;
-  margin: 250px 10px 0px 0px;
+  /* margin: 250px 10px 0px 0px; */
   width: 100px;
   height: 100px;
   background-color: yellow;
@@ -55,15 +68,15 @@
 
 .header-content-wrap .keyboardImg{
   /* float: left; */
-  margin: 320px 0px 0px -250px;  
+  /* margin: 320px 0px 0px -250px;   */
   width: 200px;
   height: 50px;
   background-color: green;
 }
 
 .header-content-wrap .mouseImg{
-  float: left;
-  margin: 320px 0px 0px 50px;    
+  /* float: left; */
+  /* margin: 320px 0px 0px 50px;     */
   width: 80px;
   height: 80px;
   background-color: bisque;
