@@ -54,7 +54,7 @@
 }
 
 .header-content-wrap .keyboardImg{
-  float: left;
+  /* float: left; */
   margin: 320px 0px 0px -250px;  
   width: 200px;
   height: 50px;

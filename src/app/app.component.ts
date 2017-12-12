@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import $ from 'jquery';
 import Parallax from 'parallax-js';
 
 @Component({
@@ -10,8 +11,9 @@ export class AppComponent implements OnInit  {
   title = 'app';
 
   ngOnInit() {
-    const scene = document.getElementById('scene');
+    const scene = $('#scene').get(0);
     const parallaxInstance = new Parallax(scene);
+    parallaxInstance.origin(0.5, 0);
   }
 
 }
