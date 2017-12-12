@@ -1,6 +1,8 @@
 # Project-level settings
 /.gitconfig
 
+package-lock.json
+
 bin/
 obj/
 node_modules/
