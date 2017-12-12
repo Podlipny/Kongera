@@ -1,0 +1,126 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~/../assets/animate.css";
+
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+html {
+	font: normal 16px Raleway;
+	color:#555;
+}
+
+ul, nav {
+	list-style:none;
+}
+
+a {
+	text-decoration:none;
+	opacity:0.75;
+	color:#111;
+}
+
+a:hover {
+	opacity:1;
+}
+
+header {
+  position: absolute;
+  height: 60px;
+  background-color: #fff;
+  width: 100%;
+  z-index: 999;
+  display: flex !important;
+  justify-content: center;
+  flex-direction: row;
+}
+
+header .row{
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header nav {
+  display: flex !important;
+  flex-direction: column;  
+  justify-content: center;
+}
+
+header nav ul{
+  display: flex !important;
+  flex-direction: row;  
+  justify-content: center;  
+  margin: 0px 0px 0px 0px;
+}
+
+header nav ul li{
+  margin: 0px 15px 0px 0px;  
+}
+
+section {
+	display:flex;
+	flex-direction:column;
+	/* padding: 100px 80px; */
+}
+
+.flex-wrapper {
+  display: flex !important;
+  justify-content: center;  
+  flex-direction: column; 
+}
+
+@keyframes rollIn {
+  from {
+    opacity: 0;
+    transform: translate3d(-400%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.rollIn {
+  animation-name: rollIn;
+  animation-duration: 1.5s;  
+}
+
+@keyframes rollInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(300%, 300%, 0) rotate3d(0, 0, 1, -120deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.rollInRight {
+  animation-name: rollInRight;
+  animation-duration: 1.5s;  
+}
+
+@keyframes rollInBottom {
+  from {
+    opacity: 0;
+    transform: translate3d(-150%, 600%, 0) rotate3d(0, 0, 1, 120deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.rollInBottom {
+  animation-name: rollInBottom;
+  animation-duration: 1.5s;  
+}
+

@@ -1,0 +1,6 @@
+# Project-level settings
+/.gitconfig
+
+bin/
+obj/
+node_modules/
