@@ -12,13 +12,8 @@ export class AppComponent implements OnInit  {
 
   ngOnInit() {
     const scene = $('#scene').get(0);
-    // const imacScene = $('#imacScene').get(0);
-    // const logoScene = $('#logoScene').get(0);
 
     const parallaxPlantInstance = new Parallax(scene);
-    // const parallaxImacInstance = new Parallax(imacScene);
-    // const parallaxLogoInstance = new Parallax(logoScene);
-
   }
 
 }
