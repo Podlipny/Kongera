@@ -143,3 +143,19 @@ section {
   animation-name: slideInRight;
   /* animation-delay: 1s;     */
 }
+
+@keyframes iMacDesignSlideInRight {
+  from {
+    transform: translate3d(10%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.iMacDesignSlideInRight {
+  animation-name: iMacDesignSlideInRight;
+  animation-delay: 0.1s;
+}
