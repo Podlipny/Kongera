@@ -1,84 +1,97 @@
-.header-sec {
+.headerSec {
   height: 100vh;
-  background-color: red;
+  background: #beaec0; /* Old browsers */
+  background: -moz-linear-gradient(left, #beaec0 0%, #7b7c8d 50%, #2d4050 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #beaec0 0%,#7b7c8d 50%,#2d4050 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #beaec0 0%,#7b7c8d 50%,#2d4050 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#beaec0', endColorstr='#2d4050',GradientType=1 ); /* IE6-9 */
 }
 
-.header-sec .bkg-grad-right {
+.headerSec .bkgGradRight {
   display: flex;
   overflow: hidden;
   float: right;
   height: 100vh;
-  width: 50vw;
-  background-color: blue;
+  width: calc(50vw - 1px);
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  border-left: 2px solid #ffffff;
+  background: #ef98a1; /* Old browsers */
+  background: -moz-linear-gradient(left, #ef98a1 0%, #eeb3a2 50%, #eecca3 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #ef98a1 0%,#eeb3a2 50%,#eecca3 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #ef98a1 0%,#eeb3a2 50%,#eecca3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef98a1', endColorstr='#eecca3',GradientType=1 ); /* IE6-9 */
 }
 
-.header-sec .header-content{
+.headerSec .header-content{
   position: absolute;
   display: flex;
   flex-direction: column;  
   justify-content: center;
   height: 100vh;
   width: 100%;
-  background-color: aqua;
 }
 
 .header-content-wrap{
   width: 100%;
   height: 80vh;
-  background-color: red;
 }
 
-#scene {
+#scene-left {
   display: block;
   /* zoom: 0.5;
   -moz-transform: scale(0.5); */
 }
 
-#scene .plantImgWrap{
+#scene-left .plantImgWrap{
   left: calc(10% - 50px) !important;
   margin: 0px 0px 0px 0px;
 }
-#scene .plantImg{
+#scene-left .plantImg{
   width: 100px;
   height: 100px;
   background-color: yellow;
 }
 
-#scene .imacImgWrap{
-  left: calc(50% - 150px) !important;
+#scene-left .imacImgWrap{
+  left: calc(50% - 350px) !important;
   margin: 0px 0px 0px 0px;
 }
-#scene .imacImg{
-  width: 300px;
-  height: 300px;
-  background-color: blue;
+#scene-right .imacImgWrap{
+  left: calc(0% - 346px) !important;
+  margin: 0px 0px 0px 0px;
+}
+#scene-left .img, #scene-right .img{
+  width: 699px;
+  height: 209px;
 }
 
-#scene .glassesImgWrap{
+#scene-left .glassesImgWrap{
   left: calc(30% - 50px) !important;
   margin: 300px 0px 0px 0px;
 }
-#scene .glassesImg{
+#scene-left .glassesImg{
   width: 100px;
   height: 100px;
   background-color: yellow;
 }
 
-#scene .keyboardImgWrap{
+#scene-left .keyboardImgWrap{
   left: calc(50% - 100px) !important;
   margin: 320px 0px 0px 0px;
 }
-#scene .keyboardImg{
+#scene-left .keyboardImg{
   width: 200px;
   height: 50px;
   background-color: green;
 }
 
-#scene .mouseImgWrap{
+#scene-left .mouseImgWrap{
   left: calc(65% - 40px) !important;
   margin: 320px 0px 0px 0px;
 }
-#scene .mouseImg{
+#scene-left .mouseImg{
   /* float: left; */
   /* margin: 320px 0px 0px 50px;     */
   width: 80px;
@@ -86,12 +99,12 @@
   background-color: bisque;
 }
 
-#scene .logoWrap {
+#scene-left .logoWrap {
 
   left: calc(50% - 75px) !important;
   margin: 450px 0px 0px 0px;    
 }
-#scene .logoWrap div{
+#scene-left .logoWrap div{
   width: 150px;
   height: 80px;
   background-color: pink;
