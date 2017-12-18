@@ -12,9 +12,13 @@ export class AppComponent implements OnInit  {
 
   ngOnInit() {
     const sceneLeft = $('#scene-left').get(0);
+    const sceneLeft2 = $('#scene-left2').get(0);
     const sceneRight = $('#scene-right').get(0);
 
+    
     const parallaxSceneLeftInstance = new Parallax(sceneLeft);
+    const parallaxSceneLeftInstance2 = new Parallax(sceneLeft2);
+
     const parallaxSceneRightInstance = new Parallax(sceneRight);
 
   }

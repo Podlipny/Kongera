@@ -14,8 +14,8 @@
   overflow: hidden;
   float: right;
   height: 100vh;
-  width: calc(50vw - 1px);
-  border-left: 2px solid #ffffff;
+  width: calc(50vw - 0px);
+  /* border-left: 2px solid #ffffff; */
   background: #ef98a1; /* Old browsers */
   background: -moz-linear-gradient(left, #ef98a1 0%, #eeb3a2 50%, #eecca3 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(left, #ef98a1 0%,#eeb3a2 50%,#eecca3 100%); /* Chrome10-25,Safari5.1-6 */
@@ -24,12 +24,26 @@
 }
 
 .headerSec .header-content{
+  overflow: hidden;
   position: absolute;
+  height: 100vh;
+  width: 100%;
+}
+.headerSec .header-center-content{
   display: flex;
   flex-direction: column;  
   justify-content: center;
+}
+
+.middleBorder {
   height: 100vh;
-  width: 100%;
+  width: calc(50vw + 1px);
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  overflow: hidden;
+  float: right;
+  border-left: 2px solid #ffffff;
 }
 
 .header-content-wrap{
@@ -41,6 +55,10 @@
   display: block;
   /* zoom: 0.5;
   -moz-transform: scale(0.5); */
+}
+
+#scene-left2 {
+  display: block;
 }
 
 #scene-left .plantImgWrap{
@@ -76,11 +94,11 @@
   background-color: yellow;
 }
 
-#scene-left .keyboardImgWrap{
+#scene-left2 .keyboardImgWrap{
   left: calc(50% - 100px) !important;
   margin: 320px 0px 0px 0px;
 }
-#scene-left .keyboardImg{
+#scene-left2 .keyboardImg{
   width: 200px;
   height: 50px;
   background-color: green;
