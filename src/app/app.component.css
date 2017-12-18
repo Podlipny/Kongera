@@ -9,13 +9,12 @@
 
 .headerSec .bkgGradRight {
   display: flex;
+  flex-direction: column;  
+  justify-content: center;
   overflow: hidden;
   float: right;
   height: 100vh;
   width: calc(50vw - 1px);
-  display: flex;
-  flex-direction: column;  
-  justify-content: center;
   border-left: 2px solid #ffffff;
   background: #ef98a1; /* Old browsers */
   background: -moz-linear-gradient(left, #ef98a1 0%, #eeb3a2 50%, #eecca3 100%); /* FF3.6-15 */
