@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~/../assets/animate.css";
+@import "~/../assets/custom.animate.css";
 
 
 * {
@@ -87,87 +88,4 @@ section {
   display: flex !important;
   justify-content: center;  
   flex-direction: column; 
-}
-
-@keyframes rollIn {
-  from {
-    opacity: 0;
-    transform: translate3d(-400%, 0, 0) rotate3d(0, 0, 1, -120deg);
-  }
-
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-.rollIn {
-  animation-name: rollIn;
-  animation-duration: 1.5s;  
-}
-
-@keyframes rollInRight {
-  from {
-    opacity: 0;
-    transform: translate3d(300%, 300%, 0) rotate3d(0, 0, 1, -120deg);
-  }
-
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-.rollInRight {
-  animation-name: rollInRight;
-  animation-duration: 1.5s;  
-}
-
-@keyframes rollInBottom {
-  from {
-    opacity: 0;
-    transform: translate3d(-150%, 600%, 0) rotate3d(0, 0, 1, 120deg);
-  }
-
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-.rollInBottom {
-  animation-name: rollInBottom;
-  animation-duration: 1.5s;  
-}
-
-@keyframes slideInRight {
-  from {
-    transform: translate3d(100%, 0, 0);
-    visibility: visible;
-  }
-
-  to {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.slideInRight {
-  animation-name: slideInRight;
-  /* animation-delay: 1s;     */
-}
-
-@keyframes iMacDesignSlideInRight {
-  from {
-    transform: translate3d(10%, 0, 0);
-    visibility: visible;
-  }
-
-  to {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.iMacDesignSlideInRight {
-  animation-name: iMacDesignSlideInRight;
-  animation-delay: 0.1s;
 }
