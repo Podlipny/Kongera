@@ -2,6 +2,50 @@
 @import "~/../assets/animate.css";
 @import "~/../assets/custom.animate.css";
 
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Light.eot');
+  src: url('./fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/Roboto-Light.woff2') format('woff2'),
+      url('./fonts/Roboto-Light.woff') format('woff'),
+      url('./fonts/Roboto-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Medium.eot');
+  src: url('./fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/Roboto-Medium.woff2') format('woff2'),
+      url('./fonts/Roboto-Medium.woff') format('woff'),
+      url('./fonts/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-LightItalic.eot');
+  src: url('./fonts/Roboto-LightItalic.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/Roboto-LightItalic.woff2') format('woff2'),
+      url('./fonts/Roboto-LightItalic.woff') format('woff'),
+      url('./fonts/Roboto-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Regular.eot');
+  src: url('./fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/Roboto-Regular.woff2') format('woff2'),
+      url('./fonts/Roboto-Regular.woff') format('woff'),
+      url('./fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 * {
 	margin:0;
@@ -10,7 +54,7 @@
 }
 
 html {
-	font: normal 16px Raleway;
+	font: normal 16px Roboto, Raleway, Arial;
 	color:#292e31;
 }
 
@@ -25,13 +69,13 @@ ul, nav {
 a {
   text-decoration: none;
   line-height: 1.2;
-	opacity:0.75;
-	color:#111;
+	opacity: 1;
+	color: inherit;
 }
 
 a:hover {
-  text-decoration: none !important;
-	opacity:1;
+  text-decoration: none;
+  color: inherit;
 }
 a:active {
   text-decoration: none;  
@@ -43,26 +87,29 @@ header {
   background-color: #fff;
   width: 100%;
   z-index: 999;
-  display: flex !important;
+  display: flex;
   justify-content: center;
   flex-direction: row;
 }
 
 header .row {
   margin: -5px 0px 0px 0px;  
-  display: flex !important;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 header nav {
-  display: flex !important;
+  display: flex;
   flex-direction: column;  
   justify-content: center;
 }
 
 header nav ul {
-  display: flex !important;
+  display: flex;
+  font-family: 'roboto';
+  font-weight: 500;
+  font-size: 15px;
   flex-direction: row;  
   justify-content: center;
   margin: 0px 0px 0px 0px;
@@ -73,19 +120,23 @@ header nav ul li {
   margin: 0px 40px 0px 0px;  
 }
 
+header nav ul li:hover {
+  opacity: 0.75;
+}
+
 header nav ul li a {
-  vertical-align: middle;  
+  vertical-align: middle;
+  color: #292e31;
   margin: 0px 0px 0px 10px;  
 }
 
 section {
 	display:flex;
 	flex-direction:column;
-	/* padding: 100px 80px; */
 }
 
-.flex-wrapper {
-  display: flex !important;
+.display-flex {
+  display: flex;
   justify-content: center;  
   flex-direction: column; 
 }

@@ -58,7 +58,7 @@
 }
 .slideInRight {
   animation-name: slideInRight;
-  animation-delay: 1.0s;    
+  animation-delay: 0.8s;    
 }
 
 @keyframes iMacDesignSlideInDown {
@@ -73,7 +73,7 @@
 }
 .iMacDesignSlideInDown {
   animation-name: iMacDesignSlideInDown;
-  animation-delay: 1.0s;
+  animation-delay: 0.8s;
 }
 
 @keyframes zoomIn {
@@ -88,5 +88,6 @@
 }
 .zoomIn {
   animation-name: zoomIn;
-  animation-delay: 2s;
+  animation-delay: 1.4s;
 }
+

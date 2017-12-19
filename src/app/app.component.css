@@ -26,6 +26,12 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef98a1', endColorstr='#eecca3',GradientType=1 ); /* IE6-9 */
 }
 
+.wrap{
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
 .content-wrap{
   overflow: hidden;
   position: absolute;
@@ -129,5 +135,37 @@
 #scene-middle .logoWrap {
   left: calc(50% - 244px) !important;
   top: 70% !important;
-  /* margin: 400px 0px 0px 0px; */
+}
+
+/* --------------------------------------------- */
+/* About section */
+/* --------------------------------------------- */
+
+#about {
+  text-align: center;
+}
+
+.about-content {
+  padding: 174px 0px 174px 0px;
+  font-family: 'roboto';
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 29px;
+  color: #6f7c82;
+}
+
+.about-content h2{
+  margin: 33px 0px 72px 0px;
+  font-family: 'roboto';
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  color: #292e31;
+}
+
+.about-content mark{
+  background-color: transparent;
+  font-family: 'roboto';
+  font-weight: 500;
+  color: #6f7c82;
 }
