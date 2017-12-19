@@ -8,13 +8,13 @@
       </h2>
       <nav>
         <ul>
-          <li>
+          <li (click)="ScroolOnClick('about')">
             <img src="../assets/light_bulb_red.png" alt="About us" />
-            <a href="#">About</a>
+            <a>About</a>
           </li>
-          <li>
+          <li (click)="ScroolOnClick('contact')">
             <img src="../assets/contact_red.png" alt="Contact us" />
-            <a href="#">Contact</a>
+            <a>Contact</a>
           </li>
         </ul>
       </nav>
@@ -83,10 +83,12 @@
 <section id="about">
   <div class="container about-content">
     <div class="row justify-content-md-center">
-    <div class="red-light-bulb"></div>
-    <h2>O společnosti Kongera</h2>
-    <p class="col-9">Spoločnosť <mark>Kongera</mark> ponúka rozmanité riešenia v oblasti <mark>IT technológií</mark>. Špecializujeme sa na vývoj <mark>softwaru na mieru, vývoj mobilných aplikácii, spravovanie sietí, dodanie a správu hardwaru</mark> podľa požiadaviek klienta. Sme tím, ktorý prichádza s inovatívnymi a flexibilnými riešeniami pre rozvoj vášho podnikania.
-    </p>
-  </div>
+      <div class="red-light-bulb">
+        <img src="../assets/light_bulb.png" alt="About us" />
+      </div>
+      <h2>O společnosti Kongera</h2>
+      <p class="col-9">Spoločnosť <mark>Kongera</mark> ponúka rozmanité riešenia v oblasti <mark>IT technológií</mark>. Špecializujeme sa na vývoj <mark>softwaru na mieru, vývoj mobilných aplikácii, spravovanie sietí, dodanie a správu hardwaru</mark> podľa požiadaviek klienta. Sme tím, ktorý prichádza s inovatívnymi a flexibilnými riešeniami pre rozvoj vášho podnikania.
+      </p>
+    </div>
   </div>
 </section>

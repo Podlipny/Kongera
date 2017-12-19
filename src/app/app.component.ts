@@ -21,4 +21,9 @@ export class AppComponent implements OnInit  {
 
   }
 
+  ScroolOnClick(elementClass: string) {
+    document.querySelector('#' + elementClass).scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
 }

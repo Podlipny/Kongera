@@ -155,12 +155,27 @@
 }
 
 .about-content h2{
-  margin: 33px 0px 72px 0px;
+  margin: 28px 0px 72px 0px;
+  width: 100%;
   font-family: 'roboto';
   font-weight: 500;
   font-size: 32px;
   line-height: 44px;
   color: #292e31;
+}
+
+.about-content .red-light-bulb {
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  border-radius: 4px;
+  width: 65px;
+  height: 65px;
+  background-color: #c80303;
+}
+
+.about-content .red-light-bulb img {
+  align-self: center
 }
 
 .about-content mark{

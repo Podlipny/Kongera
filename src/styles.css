@@ -68,6 +68,7 @@ ul, nav {
 
 a {
   text-decoration: none;
+  cursor: pointer;
   line-height: 1.2;
 	opacity: 1;
 	color: inherit;
