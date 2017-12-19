@@ -15,7 +15,6 @@ export class AppComponent implements OnInit  {
     const sceneLeft2 = $('#scene-left2').get(0);
     const sceneRight = $('#scene-right').get(0);
 
-    
     const parallaxSceneLeftInstance = new Parallax(sceneLeft);
     const parallaxSceneLeftInstance2 = new Parallax(sceneLeft2);
 
