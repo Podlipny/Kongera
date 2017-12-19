@@ -18,22 +18,27 @@ body {
 }
 
 ul, nav {
-	list-style:none;
+	list-style: none;
 }
 
 a {
-	text-decoration:none;
+  text-decoration: none;
+  line-height: 1.2;
 	opacity:0.75;
 	color:#111;
 }
 
 a:hover {
+  text-decoration: none !important;
 	opacity:1;
+}
+a:active {
+  text-decoration: none;  
 }
 
 header {
   position: absolute;
-  height: 60px;
+  height: 59px;
   background-color: #fff;
   width: 100%;
   z-index: 999;
@@ -42,7 +47,8 @@ header {
   flex-direction: row;
 }
 
-header .row{
+header .row {
+  margin: -5px 0px 0px 0px;  
   display: flex !important;
   flex-direction: row;
   justify-content: space-between;
@@ -54,15 +60,21 @@ header nav {
   justify-content: center;
 }
 
-header nav ul{
+header nav ul {
   display: flex !important;
   flex-direction: row;  
-  justify-content: center;  
+  justify-content: center;
   margin: 0px 0px 0px 0px;
 }
 
-header nav ul li{
-  margin: 0px 15px 0px 0px;  
+header nav ul li {
+  vertical-align: middle;
+  margin: 0px 40px 0px 0px;  
+}
+
+header nav ul li a {
+  vertical-align: middle;  
+  margin: 0px 0px 0px 10px;  
 }
 
 section {

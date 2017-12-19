@@ -1,4 +1,8 @@
-#header {
+/* --------------------------------------------- */
+/* Header section */
+/* --------------------------------------------- */
+
+#header-section {
   height: 100vh;
   background: #beaec0; /* Old browsers */
   background: -moz-linear-gradient(left, #beaec0 0%, #7b7c8d 50%, #2d4050 100%); /* FF3.6-15 */
@@ -7,7 +11,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#beaec0', endColorstr='#2d4050',GradientType=1 ); /* IE6-9 */
 }
 
-#header .right-grad {
+#header-section .right-grad {
   display: flex;
   flex-direction: column;  
   justify-content: center;
@@ -15,7 +19,6 @@
   float: right;
   height: 100vh;
   width: calc(50vw - 0px);
-  /* border-left: 2px solid #ffffff; */
   background: #ef98a1; /* Old browsers */
   background: -moz-linear-gradient(left, #ef98a1 0%, #eeb3a2 50%, #eecca3 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(left, #ef98a1 0%,#eeb3a2 50%,#eecca3 100%); /* Chrome10-25,Safari5.1-6 */
@@ -48,81 +51,83 @@
 
 .content-wrap-80vh{
   width: 100%;
-  height: 80vh;
+  height: 70vh;
 }
 
 #scene-left {
   display: block;
+  height: 80%;  
   /* zoom: 0.5;
   -moz-transform: scale(0.5); */
 }
-
-#scene-left2 {
+#scene-middle {
   display: block;
+  height: 80%;
+}
+#scene-right {
+  display: block;
+  height: 80%;
 }
 
 #scene-left .plantImgWrap{
-  left: calc(10% - 50px) !important;
-  margin: 0px 0px 0px 0px;
+  left: calc(15% - 183px) !important;
+  top: -15% !important;
 }
 #scene-left .plantImg{
-  width: 100px;
-  height: 100px;
-  background-color: yellow;
+  width: 366px;
+  height: 226px;
+  background-image: url('../assets/plant.png');  
 }
-
 #scene-left .imacImgWrap{
-  left: calc(50% - 350px) !important;
+  left: calc(50% - 354px) !important;
   margin: 0px 0px 0px 0px;
 }
 #scene-right .imacImgWrap{
   left: calc(0% - 346px) !important;
   margin: 0px 0px 0px 0px;
 }
-#scene-left .img, #scene-right .img{
+#scene-left .imacImg{
   width: 699px;
   height: 209px;
+  background-image: url('../assets/iMac_left.png');
+}
+#scene-right .imacImg{
+  width: 699px;
+  height: 209px;
+  background-image: url('../assets/iMac_right.png');
 }
 
 #scene-left .glassesImgWrap{
   left: calc(30% - 50px) !important;
-  margin: 300px 0px 0px 0px;
+  top: 60% !important;
 }
 #scene-left .glassesImg{
-  width: 100px;
-  height: 100px;
-  background-color: yellow;
+  width: 139px;
+  height: 106px;
+  background-image: url('../assets/eyeglasses.png');
 }
 
-#scene-left2 .keyboardImgWrap{
-  left: calc(50% - 100px) !important;
-  margin: 320px 0px 0px 0px;
+#scene-middle .mouseImgWrap{
+  left: calc(65% - 42px) !important;
+  top: 50% !important;  
 }
-#scene-left2 .keyboardImg{
-  width: 200px;
-  height: 50px;
-  background-color: green;
-}
-
-#scene-left .mouseImgWrap{
-  left: calc(65% - 40px) !important;
-  margin: 320px 0px 0px 0px;
-}
-#scene-left .mouseImg{
-  /* float: left; */
-  /* margin: 320px 0px 0px 50px;     */
-  width: 80px;
-  height: 80px;
-  background-color: bisque;
+#scene-middle .mouseImg{
+  width: 85px;
+  height: 102px;
+  background-image: url('../assets/mouse.png');
 }
 
-#scene-left .logoWrap {
-
-  left: calc(50% - 75px) !important;
-  margin: 450px 0px 0px 0px;    
+#scene-middle .keyboardImgWrap{
+  left: calc(50% - 122px) !important;
+  top: 45% !important;
 }
-#scene-left .logoWrap div{
-  width: 150px;
-  height: 80px;
-  background-color: pink;
+#scene-middle .keyboardImg{
+  width: 243px;
+  height: 119px;
+  background-image: url('../assets/keyboard.png');
+}
+#scene-middle .logoWrap {
+  left: calc(50% - 244px) !important;
+  top: 70% !important;
+  /* margin: 400px 0px 0px 0px; */
 }
