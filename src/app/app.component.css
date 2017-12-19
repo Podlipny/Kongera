@@ -98,12 +98,12 @@
 }
 
 #scene-left .glassesImgWrap{
-  left: calc(30% - 50px) !important;
+  left: calc(30% - 45px) !important;
   top: 60% !important;
 }
 #scene-left .glassesImg{
-  width: 139px;
-  height: 106px;
+  width: 99px;
+  height: 99px;
   background-image: url('../assets/eyeglasses.png');
 }
 
