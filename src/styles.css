@@ -114,7 +114,7 @@ header {
 }
 
 header .row {
-  margin: -5px 0px 0px 0px;  
+  margin: 0px 0px 0px 0px;  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
