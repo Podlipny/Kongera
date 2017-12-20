@@ -62,6 +62,26 @@ body {
   overflow-x: hidden;
 }
 
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus { 
+  box-shadow: 0 0px 0px transparent inset, 0 0 0px transparent !important;
+  outline: 0 none;
+}
+
 ul, nav {
 	list-style: none;
 }
@@ -88,7 +108,7 @@ header {
   background-color: #fff;
   width: 100%;
   z-index: 999;
-  display: flex;
+  display: flex !important;
   justify-content: center;
   flex-direction: row;
 }
@@ -117,6 +137,7 @@ header nav ul {
 }
 
 header nav ul li {
+  cursor: pointer;  
   vertical-align: middle;
   margin: 0px 40px 0px 0px;  
 }

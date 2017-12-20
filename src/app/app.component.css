@@ -58,21 +58,26 @@
 .content-wrap-80vh{
   width: 100%;
   height: 70vh;
+  max-height: 1000px;
 }
 
 #scene-left {
   display: block;
   height: 80%;  
-  /* zoom: 0.5;
-  -moz-transform: scale(0.5); */
+  /* zoom: 0.7;
+  -moz-transform: scale(0.7); */
 }
 #scene-middle {
   display: block;
   height: 80%;
+  /* zoom: 0.7;
+  -moz-transform: scale(0.7); */
 }
 #scene-right {
   display: block;
   height: 80%;
+  /* zoom: 0.7;
+  -moz-transform: scale(0.7); */
 }
 
 #scene-left .plantImgWrap{
@@ -104,7 +109,7 @@
 }
 
 #scene-left .glassesImgWrap{
-  left: calc(30% - 45px) !important;
+  left: calc(20% - 45px) !important;
   top: 60% !important;
 }
 #scene-left .glassesImg{
@@ -146,7 +151,7 @@
 }
 
 .about-content {
-  padding: 174px 0px 174px 0px;
+  padding: 180px 0px 180px 0px;
   font-family: 'roboto';
   font-weight: normal;
   font-size: 18px;
@@ -183,4 +188,77 @@
   font-family: 'roboto';
   font-weight: 500;
   color: #6f7c82;
+}
+
+/* --------------------------------------------- */
+/* Contact section */
+/* --------------------------------------------- */
+#contact {
+  position: absolute;
+  background-color: red;
+  width: 100%;
+}
+
+.contact-icon {
+  position: relative;
+  left: calc(50% - 32px);
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  border-radius: 4px;
+  margin: -32px 0px 0px 0px;  
+  padding: 0px 0px 0px 7px;
+  width: 65px;
+  height: 65px;
+  background-color: #c80303;
+}
+
+.contact-icon img {
+  align-self: center
+}
+
+.contact-contect {
+  padding: 30px 0px 50px 0px;
+}
+
+.contact-right-bg {
+  position: absolute;  
+  display: block;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background-color: #7b7c8d;
+}
+
+input,
+textarea,
+[contenteditable] {
+  caret-color: #ffffff;
+}
+
+input, textarea {
+  border-radius: 0px;
+  background-color: #7b7c8d;
+  color: #ffffff;
+ 
+}
+
+input:focus, textarea:focus {
+  border-radius: 0px;
+  border-color: #c80303;
+  background-color: red;
+}
+
+.textarea-container {
+  background-color: red;
+}
+
+textarea {
+  display: block;
+  z-index: auto; 
+  position: relative; 
+  transition: none;
+  line-height: 22.5px; 
+  font-size: 15px; 
+  background: transparent !important;
 }

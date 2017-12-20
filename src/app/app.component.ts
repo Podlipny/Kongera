@@ -18,7 +18,6 @@ export class AppComponent implements OnInit  {
     const parallaxSceneLeftInstance = new Parallax(sceneLeft);
     const parallaxSceneMiddleInstance = new Parallax(sceneMiddle);
     const parallaxSceneRightInstance = new Parallax(sceneRight);
-
   }
 
   ScroolOnClick(elementClass: string) {
