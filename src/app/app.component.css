@@ -18,7 +18,7 @@
   overflow: hidden;
   float: right;
   height: 100vh;
-  width: calc(50vw - 0px);
+  width: calc(50% - 0px);
   background: #ef98a1; /* Old browsers */
   background: -moz-linear-gradient(left, #ef98a1 0%, #eeb3a2 50%, #eecca3 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(left, #ef98a1 0%,#eeb3a2 50%,#eecca3 100%); /* Chrome10-25,Safari5.1-6 */
@@ -46,7 +46,7 @@
 
 .middleBorder {
   height: 100vh;
-  width: calc(50vw + 1px);
+  width: calc(50% + 1px);
   display: flex;
   flex-direction: column;  
   justify-content: center;
@@ -142,6 +142,59 @@
   top: 70% !important;
 }
 
+@media (max-width: 765px) { 
+  #header-section {
+    padding: 50px 0px 0px 0px;
+    zoom: 0.55;
+    -moz-transform: scale(0.55);
+  }
+
+  #header-section .right-grad {
+    padding: 50px 0px 0px 0px;
+    height: calc(100vh - 50px);  
+  } 
+  
+
+  
+  /* #scene-left, #scene-middle, #scene-right {
+    zoom: 0.5;
+    -moz-transform: scale(0.5);
+  }
+
+  #scene-left .plantImgWrap{
+    left: calc(15% - 183px) !important;
+    top: -20% !important;
+  }
+  #scene-left .imacImgWrap{
+    left: calc(50% - 354px) !important;
+    margin: 0px 0px 0px 0px;
+  }
+  #scene-right .imacImgWrap{
+    left: calc(0% - 346px) !important;
+    margin: 0px 0px 0px 0px;
+  }
+  
+  #scene-left .glassesImgWrap{
+    left: calc(30% - 45px) !important;
+    top: 60% !important;
+  }
+  
+  #scene-middle .mouseImgWrap{
+    left: calc(65% - 42px) !important;
+    top: 50% !important;  
+  }
+  
+  #scene-middle .keyboardImgWrap{
+    left: calc(50% - 122px) !important;
+    top: 45% !important;
+  }
+  #scene-middle .logoWrap {
+    left: calc(50% - 244px) !important;
+    top: 70% !important;
+  } */
+}
+
+
 /* --------------------------------------------- */
 /* About section */
 /* --------------------------------------------- */
@@ -211,6 +264,12 @@
   width: 65px;
   height: 65px;
   background-color: #414159;
+}
+
+@media (max-width: 765px) { 
+  .contact-icon {
+    display: none;
+  }
 }
 
 .contact-icon img {
@@ -285,6 +344,18 @@
   width: 50%;
   height: 100%;
   background-color: #484863;
+}
+@media (max-width: 765px) { 
+  .contact-right-bg {
+    display: none;
+  }
+
+  .contact-contect .form {
+    width: 100% !important;
+    padding: 20px 20px 0px 20px;    
+    margin: -20px 0px 20px 0px;
+    background-color: #484863;
+  }
 }
 
 /* Contact - Input part */
