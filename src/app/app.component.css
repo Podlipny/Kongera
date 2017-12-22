@@ -444,8 +444,20 @@ textarea {
 	transform: translate3d(0, 0, 0);
 }
 
-/* Contact - Media part */
+.contact-contect button:disabled,
+.contact-contect button:disabled::before,
+.contact-contect button[disabled]{
+  opacity: 0.5;
+  background: transparent;  
+}
 
+.contact-contect .invalid-feedback {
+  background-color: #484863;
+  margin-top: 0px;
+  color: #c80303  
+}
+
+/* Contact - Media part */
 @media (max-width: 765px) { 
   .contact-icon {
     display: none;

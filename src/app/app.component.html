@@ -141,31 +141,63 @@
 
       <!-- Contact form -->
       <div class="form col-md-5 offset-md-2">
-        <div class="form-group">
-          <label class="col-form-label" for="name">Jméno</label>
-          <input type="text" class="form-control" id="name">
-        </div>
-
-        <div class="form-group">
-          <label class="col-form-label" for="inputDefault">Telefon</label>
-          <input type="text" class="form-control" id="Phone">
-        </div>
-
-        <div class="form-group">
-          <label class="col-form-label" for="inputDefault">Email</label>
-          <input type="text" class="form-control" id="Email">
-        </div>
-
-        <div class="form-group">
-          <label for="exampleTextarea">Zpráva pro nás</label>
-          <div class="textarea-container">
-            <textarea class="form-control" id="message" rows="8"></textarea>
+        <form [formGroup]="contactForm" (ngSubmit)="submitContact(contactForm.value)">          
+          <div class="form-group">
+            <label for="Name" class="col-form-label">Jméno</label>
+            <input type="text" 
+                   id="Name"
+                   formControlName="name" 
+                   class="form-control"
+                   [ngClass]="{'is-invalid': !contactForm.controls['name'].valid && contactForm.controls['name'].touched}">
+            <div class="invalid-feedback" >
+              Error name
+            </div>
           </div>
-        </div>
 
-        <div class="form-group float-right">
-          <button class="button button-animation">Publish</button>
-        </div>
+          <div class="form-group">
+            <label for="Phone" class="col-form-label">Telefon</label>
+            <input type="text" 
+                   class="form-control"
+                   id="Phone"
+                   formControlName="phone"
+                   [ngClass]="{'is-invalid': !contactForm.controls['phone'].valid && contactForm.controls['phone'].touched}">                   
+            <div class="invalid-feedback" >
+              Error phone
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="Email" class="col-form-label">Email</label>
+            <input type="text" 
+                   class="form-control" 
+                   id="Email"
+                   formControlName="email"
+                   [ngClass]="{'is-invalid': !contactForm.controls['email'].valid && contactForm.controls['email'].touched}"> 
+            <div class="invalid-feedback" >
+              Error mail
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="Message">Zpráva pro nás</label>
+            <div class="textarea-container">
+              <textarea class="form-control" 
+              id="Message" 
+              formControlName="message"
+              [ngClass]="{'is-invalid': !contactForm.controls['message'].valid && contactForm.controls['message'].touched}"
+              rows="8"></textarea>
+              <div class="invalid-feedback" >
+                Error message
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="form-group float-right">
+            <button type="submit" class="button button-animation" [disabled]="!contactForm.valid">Odeslat</button>
+          </div>
+
+        </form>
       </div>
 
       <div class="col-md-5">
