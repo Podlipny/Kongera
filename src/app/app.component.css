@@ -144,19 +144,39 @@
 
 @media (max-width: 765px) { 
   #header-section {
-    height: calc(100vh + 220px);    
-    padding: 220px 0px 0px 0px;
-    zoom: 0.55;
-    -moz-transform: scale(0.55);
+    width: 200%;
+    margin-left: -50%;
+    margin-bottom: -200px;
+    /* height: calc(100vh + 220px);     */
+    /* padding: 220px 0px 0px 0px; */
+    transform: scale(0.55);
+
+    /* zoom: 0.55;
+    -moz-transform: scale(0.55); */
   }
 }
 
 @media (max-width: 576px) { 
   #header-section {
-    height: calc(100vh + 340px);
-    padding: 340px 0px 0px 0px;
-    zoom: 0.4;
-    -moz-transform: scale(0.4);
+    /* height: calc(100vh + 340px);
+    padding: 340px 0px 0px 0px; */
+    width: 260%;
+    margin-left: -80%;
+    margin-top: -50px;
+    margin-bottom: -250px;
+
+    /* height: calc(100vh + 220px);     */
+    /* padding: 220px 0px 0px 0px; */
+    transform: scale(0.4);
+  }
+
+  #scene-middle .mouseImgWrap{
+    left: calc(75% - 42px) !important;
+  }
+
+  #scene-left .glassesImgWrap{
+    left: calc(20% - 45px) !important;
+    top: 60% !important;
   }
 }
 
