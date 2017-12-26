@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --watch --live-reload --open",
+    "run": "ng serve --watch --live-reload --open",
+    "start": "ng build --prod --env=prod && node server.js",
     "server": "nodemon server.js",
     "build": "ng build",
     "test": "ng test",
