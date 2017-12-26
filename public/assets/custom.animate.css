@@ -1,0 +1,93 @@
+@keyframes rollIn {
+  from {
+    opacity: 0;
+    transform: translate3d(-400%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.rollIn {
+  animation-name: rollIn;
+  animation-duration: 1.5s;  
+}
+
+@keyframes rollInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(300%, 300%, 0) rotate3d(0, 0, 1, -120deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.rollInRight {
+  animation-name: rollInRight;
+  animation-duration: 1.5s;  
+}
+
+@keyframes rollInBottom {
+  from {
+    opacity: 0;
+    transform: translate3d(-150%, 600%, 0) rotate3d(0, 0, 1, 120deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.rollInBottom {
+  animation-name: rollInBottom;
+  animation-duration: 1.5s;  
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slideInRight {
+  animation-name: slideInRight;
+  animation-delay: 0.8s;    
+}
+
+@keyframes iMacDesignSlideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.iMacDesignSlideInDown {
+  animation-name: iMacDesignSlideInDown;
+  animation-delay: 0.8s;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+.zoomIn {
+  animation-name: zoomIn;
+  animation-delay: 1.4s;
+}
+
