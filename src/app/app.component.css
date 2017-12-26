@@ -87,7 +87,7 @@
 #scene-left .plantImg{
   width: 366px;
   height: 258px;
-  background-image: url('../assets/plant.png');  
+  background-image: url('/assets/plant.png');  
 }
 #scene-left .imacImgWrap{
   left: calc(50% - 346px) !important;
@@ -100,12 +100,12 @@
 #scene-left .imacImg{
   width: 699px;
   height: 209px;
-  background-image: url('../assets/iMac_left.png');
+  background-image: url('/assets/iMac_left.png');
 }
 #scene-right .imacImg{
   width: 699px;
   height: 209px;
-  background-image: url('../assets/iMac_right.png');
+  background-image: url('/assets/iMac_right.png');
 }
 
 #scene-left .glassesImgWrap{
@@ -115,7 +115,7 @@
 #scene-left .glassesImg{
   width: 99px;
   height: 99px;
-  background-image: url('../assets/eyeglasses.png');
+  background-image: url('/assets/eyeglasses.png');
 }
 
 #scene-middle .mouseImgWrap{
@@ -125,7 +125,7 @@
 #scene-middle .mouseImg{
   width: 85px;
   height: 102px;
-  background-image: url('../assets/mouse.png');
+  background-image: url('/assets/mouse.png');
 }
 
 #scene-middle .keyboardImgWrap{
@@ -135,7 +135,7 @@
 #scene-middle .keyboardImg{
   width: 243px;
   height: 119px;
-  background-image: url('../assets/keyboard.png');
+  background-image: url('/assets/keyboard.png');
 }
 #scene-middle .logoWrap {
   left: calc(50% - 244px) !important;
