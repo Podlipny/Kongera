@@ -160,14 +160,30 @@
   #header-section {
     /* height: calc(100vh + 340px);
     padding: 340px 0px 0px 0px; */
-    width: 260%;
-    margin-left: -80%;
-    margin-top: -50px;
+    width: 290%;
+    height: calc(100vh + 100px);
+    margin-left: -95%;
     margin-bottom: -250px;
 
     /* height: calc(100vh + 220px);     */
     /* padding: 220px 0px 0px 0px; */
-    transform: scale(0.4);
+    transform: scale(0.35);
+  }
+
+  .content-wrap {
+    height: calc(100vh + 100px);
+  }
+
+  .content-wrap-80vh {
+    height: calc(70vh + 100px);
+  }
+
+  .right-grad {
+    height: calc(100vh + 100px) !important;
+  }
+
+  .middleBorder {
+    height: calc(100vh + 100px);
   }
 
   #scene-middle .mouseImgWrap{

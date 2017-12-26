@@ -197,9 +197,3 @@ section {
     align-self: center;
   }
 }
-
-@media (max-width: 576px) { 
-  header {
-    padding-top: 70px;
-  }
-}
