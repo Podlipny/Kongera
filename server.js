@@ -4,6 +4,8 @@ const bodyParser   = require('body-parser');
 const app    = express();
 const port   = process.env.PORT || 3000;
 
+const sendmail = require('sendmail')();
+
 class Server {
   constructor() {
     this.initExpressMiddleWare();
@@ -48,16 +50,15 @@ class Server {
 
   // send mail from client
   sendMail(req, res) {
-    console.log(req.body);
-    // userRepo.insertUser(req.body, (err, user) => {
-    //   if (err) {
-    //     log.error('*** userRepo.insertUser error: ' + util.inspect(err));
-    //     res.json({status: false, error: 'Insert failed', user: null});
-    //   } else {
-    //     log.trace('*** insertUser ok');
-    //     res.json({ status: true, error: null, user: user });
-    //   }
-    // });
+    
+    sendmail({
+        from: req.body.email,
+        to: 'ji.podlipny@gmail.com',
+        subject: 'Kongera kontakt',
+        html: req.body.message,
+      }, function(err, reply) {
+        console.log(err && err.stack);
+    });
   }
 }
 

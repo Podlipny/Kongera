@@ -7,7 +7,7 @@
     "start": "node server.js",
     "start:watch": "ng serve --watch --live-reload --open",
     "server": "nodemon server.js",
-    "build": "ng build",
+    "build": "ng build --aot --prod --env=prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -23,14 +23,15 @@
     "@angular/platform-browser": "^4.2.4",
     "@angular/platform-browser-dynamic": "^4.2.4",
     "@angular/router": "^4.2.4",
+    "body-parser": "^1.18.2",
     "bootstrap": "^4.0.0-alpha.6",
     "core-js": "^2.4.1",
+    "express": "^4.16.2",
     "jquery": "^3.2.1",
     "parallax-js": "^3.1.0",
     "rxjs": "^5.4.2",
-    "zone.js": "^0.8.14",
-    "body-parser": "^1.18.2",
-    "express": "^4.16.2"
+    "sendmail": "^1.2.0",
+    "zone.js": "^0.8.14"
   },
   "devDependencies": {
     "@angular/cli": "^1.3.0",
