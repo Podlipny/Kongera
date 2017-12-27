@@ -40,16 +40,6 @@ export class AppComponent implements OnInit  {
         Validators.email ])],
       'message': [null, Validators.required]
     });
-  }
-
-  ngOnInit() {
-    const sceneLeft = $('#scene-left').get(0);
-    const sceneMiddle = $('#scene-middle').get(0);
-    const sceneRight = $('#scene-right').get(0);
-
-    const parallaxSceneLeftInstance = new Parallax(sceneLeft);
-    const parallaxSceneMiddleInstance = new Parallax(sceneMiddle);
-    const parallaxSceneRightInstance = new Parallax(sceneRight);
 
     this.route.paramMap.subscribe(params => {
       const lang = params.get('lang');
@@ -60,6 +50,16 @@ export class AppComponent implements OnInit  {
         err => this.router.navigate([''])
       );
     });
+  }
+
+  ngOnInit() {
+    const sceneLeft = $('#scene-left').get(0);
+    const sceneMiddle = $('#scene-middle').get(0);
+    const sceneRight = $('#scene-right').get(0);
+
+    const parallaxSceneLeftInstance = new Parallax(sceneLeft);
+    const parallaxSceneMiddleInstance = new Parallax(sceneMiddle);
+    const parallaxSceneRightInstance = new Parallax(sceneRight);
   }
 
   ScroolOnClick(elementClass: string) {
