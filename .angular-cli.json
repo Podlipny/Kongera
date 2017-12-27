@@ -9,6 +9,7 @@
       "outDir": "public",
       "assets": [
         "assets",
+        "resources",
         "fonts",
         "favicon.ico"
       ],

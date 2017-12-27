@@ -5,19 +5,30 @@ import $ from 'jquery';
 import Parallax from 'parallax-js';
 
 import { MailService } from './mail.service';
+import { LanguageService } from './language.service';
+
 import { Message } from './message.model';
+import { ActivatedRoute, Router } from '@angular/router';
+import { IResource } from './IResource';
 
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-container',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit  {
-  title = 'app';
+  title = 'kongera.com';
+  emailSent = false;
+  resources: IResource;
+
   contactForm: FormGroup;
 
-  constructor(private mailService: MailService, private fb: FormBuilder) {
+  constructor(private route: ActivatedRoute,
+              private router: Router,
+              private mailService: MailService,
+              private languageService: LanguageService,
+              private fb: FormBuilder) {
     this.contactForm = fb.group({
       'name': [null, Validators.required],
       'phone': [null, Validators.compose([
@@ -39,6 +50,16 @@ export class AppComponent implements OnInit  {
     const parallaxSceneLeftInstance = new Parallax(sceneLeft);
     const parallaxSceneMiddleInstance = new Parallax(sceneMiddle);
     const parallaxSceneRightInstance = new Parallax(sceneRight);
+
+    this.route.paramMap.subscribe(params => {
+      const lang = params.get('lang');
+      this.languageService.loadLanguageResource(lang).subscribe(
+        res => {
+          this.resources = res;
+        },
+        err => this.router.navigate([''])
+      );
+    });
   }
 
   ScroolOnClick(elementClass: string) {
@@ -48,6 +69,9 @@ export class AppComponent implements OnInit  {
   }
 
   submitContact(message: Message) {
-    this.mailService.sendMail(message);
+    // this.mailService.sendMail(message).subscribe(res => {
+    //   this.emailSent = true;
+    // });
+    this.emailSent = true;
   }
 }

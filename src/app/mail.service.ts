@@ -3,18 +3,14 @@ import { HttpClient } from '@angular/common/http';
 import { Message } from './message.model';
 
 import { environment } from '../environments/environment';
-
-export interface ResetMessage {
-  message: string;
-}
+import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class MailService {
 
   constructor(private http: HttpClient) { }
 
-  sendMail(message: Message) {
-    this.http.post(environment.serverPath + '/contact', message).subscribe(res => {
-    });
+  sendMail(message: Message): Observable<object> {
+    return this.http.post(environment.serverPath + '/contact', message);
   }
 }

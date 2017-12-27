@@ -490,7 +490,17 @@ textarea {
 .contact-contect .invalid-feedback {
   background-color: #484863;
   margin-top: 0px;
-  color: #c80303  
+  color: #C9463A  
+}
+
+.contact-contect .confirm-message {
+  font-family: 'roboto';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  color: #eceff1;
+  background-color: #237F06;
+  padding: 10px 10px 10px 20px;
 }
 
 /* Contact - Media part */

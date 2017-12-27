@@ -49,47 +49,52 @@ class Server {
   }
 
   // send mail from client
+  // pozor musi se nastavit enable less secure apps v Gmail
   sendMail(req, res) {
-    const sendmail = require('sendmail')({
-      logger: {
-        debug: console.log,
-        info: console.info,
-        warn: console.warn,
-        error: console.error
-      },
-      silent: false
+    const confirmation = '<b>Potvrzujeme přijetí vaší zprávy. V nejbližší době Vám odpovíme.</b><br\><br\>';
+
+    const name = '<b>Jmeno</b>: ' + req.body.name + '<br\>';
+    const email = '<b>email</b>: ' + req.body.email + '<br\>';
+    const phone = '<b>phone</b>: ' + req.body.phone + '<br\>';
+    const message = '<b>message</b>: ' + req.body.message + '<br\>';
+
+    var smtpTransport = nodemailer.createTransport({
+      service: "gmail",
+      host: "smtp.gmail.com",
+      auth: {
+        user: "info@kongera.com",
+        pass: "**********"
+      }
     });
-    
-    sendmail({
-      from: 'no-reply@yourdomain.com',
-      to: 'ji.podlipny@gmail.com',
-      subject: 'test sendmail',
-      html: 'Mail of test sendmail ',
-    }, function(err, reply) {
-      console.log(err && err.stack);
-  });
-  //     var smtpTransport = nodemailer.createTransport({
-  //     service: "gmail",
-  //     host: "smtp.gmail.com",
-  //     auth: {
-  //       user: "ji.podlipny@gmail.com",
-  //       pass: ""
-  //     }
-  //   });
 
-  //   var mailOptions = {
-  //     to: 'ji.podlipny@gmail.com',
-  //     subject: 'Kongera message',
-  //     text: req.body.message
-  //   };
+    var mailOptions = {
+      from: req.body.email,
+      to: 'info@kongera.com,',
+      subject: 'Kongera message from: ' + req.body.email,
+      html: name + email + phone + message
+    };
 
-  //   smtpTransport.sendMail(mailOptions, function (error, response) {
-  //     if (error) {
-  //       console.log(error);
-  //     } else {
-  //       console.log("Message sent: " + response.message);
-  //     }
-  //   });
+    var confirmationMailOptions = {
+      from: 'info@kongera.com',
+      to: req.body.email,
+      subject: 'Kongera.com potvrzení zprávy.',
+      html: confirmation + name + email + phone + message
+    };
+
+    smtpTransport.sendMail(mailOptions, function (error, response) {
+      if (error) {
+        console.log(error);
+      } else {
+        console.log("Message sent!");
+      }
+    });
+    smtpTransport.sendMail(confirmationMailOptions, function (error, response) {
+      if (error) {
+        console.log(error);
+      } else {
+        console.log("Confirmation sent!");
+      }
+    });
   }
 }
 

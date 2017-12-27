@@ -193,6 +193,10 @@
             
           </div>
 
+          <div *ngIf="emailSent" class="form-group confirm-message">
+            Email uspesne odeslan
+          </div>
+
           <div class="form-group float-right">
             <button type="submit" class="button button-animation" [disabled]="!contactForm.valid">Odeslat</button>
           </div>
@@ -201,7 +205,8 @@
       </div>
 
       <div class="col-md-5">
-        <p>&copy; 2017 Kongera.com<p>          
+        <p>&copy; 2017 Kongera.com<p>
+          {{resources.error.name}}
       </div>
         
     </div>

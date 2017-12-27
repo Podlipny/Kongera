@@ -1,4 +1,4 @@
-interface Resource {
+export interface IResource {
   error: {
     name: string;
     phone: string;
