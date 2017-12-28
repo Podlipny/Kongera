@@ -1,8 +1,26 @@
 {
+  "menu": {
+    "about": "O nás",
+    "contact": "Kontakt"
+  },
+  "about": {
+    "header": "O společnosti Kongera",
+    "article": "Spoločnosť <mark>Kongera</mark> ponúka rozmanité riešenia v oblasti <mark>IT technológií</mark>. Špecializujeme sa na vývoj <mark>softwaru na mieru, vývoj mobilných aplikácii, spravovanie sietí, dodanie a správu hardwaru</mark> podľa požiadaviek klienta. Sme tím, ktorý prichádza s inovatívnymi a flexibilnými riešeniami pre rozvoj vášho podnikania."
+  },
+  "contact": {
+    "header": "Kontakt",
+    "nameTitle": "Majitel",
+    "sendBtn": "Odeslat",
+    "nameLabel": "Jméno",
+    "phoneLabel": "Telefon",
+    "emailLabel": "Email",
+    "messageLabel": "Zpráva pro nás",
+    "emailSend": "Email úspěšne odeslán!"
+  },
   "error": {
-    "name": "",
-    "phone": "string",
-    "email": "string",
-    "message": "string"
+    "name": "Jméno musí být vyplněno!",
+    "phone": "Telefon musí být vyplněn! Prosím vyplňte ve formátu +420 721 123 456",
+    "email":  "Email musí být vyplněn!",
+    "message":  "Zpráva pro nás musí být vyplněna!"
   }
 }

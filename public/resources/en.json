@@ -1,4 +1,22 @@
 {
+  "menu": {
+    "about": "About",
+    "contact": "Contact"
+  },
+  "about": {
+    "header": "About Kongera company",
+    "article": "<mark>Kongera</mark> offers diverse <mark>IT solutions</mark>. We are specialists at <mark>developing personalised software, mobile applications, IT and network support, hardware delivery and maintenance</mark>, all according to client requests. Our team comes with innovative and flexible solutions for your business development."
+  },
+  "contact": {
+    "header": "Contact",
+    "nameTitle": "Owner",
+    "sendBtn": "Sent",
+    "nameLabel": "Name",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "messageLabel": "Message for us",
+    "emailSend": "Email successfully send!"
+  },
   "error": {
     "name": "Name is required!",
     "phone": "Phone is required! Please input in format +420 721 123 456",

@@ -102,6 +102,13 @@ a:active {
   text-decoration: none;  
 }
 
+mark{
+  background-color: transparent;
+  font-family: 'roboto';
+  font-weight: 500;
+  color: #6f7c82;
+}
+
 header {
   position: absolute;
   height: 59px;

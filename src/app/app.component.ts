@@ -44,9 +44,7 @@ export class AppComponent implements OnInit  {
     this.route.paramMap.subscribe(params => {
       const lang = params.get('lang');
       this.languageService.loadLanguageResource(lang).subscribe(
-        res => {
-          this.resources = res;
-        },
+        res => this.resources = res,
         err => this.router.navigate([''])
       );
     });

@@ -9,12 +9,12 @@
       <nav>
         <ul>
           <li (click)="ScroolOnClick('about')">
-            <img src="../assets/light_bulb_red.png" alt="About us" />
-            <a>About</a>
+            <img src="../assets/light_bulb_red.png" alt="resources?.menu.about" />
+            <a>{{resources?.menu.about}}</a>
           </li>
           <li (click)="ScroolOnClick('contact')">
-            <img src="../assets/contact_red.png" alt="Contact us" />
-            <a>Contact</a>
+            <img src="../assets/contact_red.png" alt="resources?.menu.contact" />
+            <a>{{resources?.menu.contact}}</a>
           </li>
         </ul>
       </nav>
@@ -88,13 +88,8 @@
       <div class="red-light-bulb">
         <img src="../assets/light_bulb.png" alt="About us" />
       </div>
-      <h2>O společnosti Kongera</h2>
-      <p class="col-9">Spoločnosť
-        <mark>Kongera</mark> ponúka rozmanité riešenia v oblasti
-        <mark>IT technológií</mark>. Špecializujeme sa na vývoj
-        <mark>softwaru na mieru, vývoj mobilných aplikácii, spravovanie sietí, dodanie a správu hardwaru</mark> podľa požiadaviek
-        klienta. Sme tím, ktorý prichádza s inovatívnymi a flexibilnými riešeniami pre rozvoj vášho podnikania.
-      </p>
+      <h2>{{resources?.about.header}}</h2>
+      <p [innerHTML]="resources?.about.article" class="col-9"></p>
     </div>
   </div>
 </section>
@@ -109,31 +104,31 @@
     <div class="row">
       <!-- Contact -->
       <div class="col-md-5">
-        <h2>Kontakt</h2>
+        <h2>{{resources?.contact.header}}</h2>
         <h3>Michal Mikuš</h3>
         <span class="splitter"></span>
-        <h4>Owner</h4>
+        <h4>{{resources?.contact.nameTitle}}</h4>
         <table>
           <tr>
-            <td><img src="../assets/contact_grey.png" alt="Telephone" /></td>
+            <td><img src="../assets/contact_grey.png" alt="resources?.contact.phoneLabel" /></td>
             <td>+421 908 755 170</td>
           </tr>
           <tr>
-            <td><img src="../assets/email_gray.png" alt="Email" /></td>
+            <td><img src="../assets/email_gray.png" alt="resources?.contact.emailLabel" /></td>
             <td>michal.mikus@kongera.com</td>
           </tr>
         </table>
 
         <h3>Matej Mikuš</h3>
         <span class="splitter"></span>
-        <h4>Owner</h4>
+        <h4>{{resources?.contact.nameTitle}}</h4>
         <table>
             <tr>
-              <td><img src="../assets/contact_grey.png" alt="Telephone" /></td>
+              <td><img src="../assets/contact_grey.png" alt="resources?.contact.phoneLabel" /></td>
               <td>+420 734 150 740</td>
             </tr>
             <tr>
-              <td><img src="../assets/email_gray.png" alt="Email" /></td>
+              <td><img src="../assets/email_gray.png" alt="resources?.contact.emailLabel" /></td>
               <td>matej.mikus@kongera.com</td>
             </tr>
           </table>
@@ -143,43 +138,43 @@
       <div class="form col-md-5 offset-md-2">
         <form [formGroup]="contactForm" (ngSubmit)="submitContact(contactForm.value)">          
           <div class="form-group">
-            <label for="Name" class="col-form-label">Jméno</label>
+            <label for="Name" class="col-form-label">{{resources?.contact.nameLabel}}</label>
             <input type="text" 
                    id="Name"
                    formControlName="name" 
                    class="form-control"
                    [ngClass]="{'is-invalid': !contactForm.controls['name'].valid && contactForm.controls['name'].touched}">
             <div class="invalid-feedback" >
-              Error name
+              {{resources?.error.name}}
             </div>
           </div>
 
           <div class="form-group">
-            <label for="Phone" class="col-form-label">Telefon</label>
+            <label for="Phone" class="col-form-label">{{resources?.contact.phoneLabel}}</label>
             <input type="text" 
                    class="form-control"
                    id="Phone"
                    formControlName="phone"
                    [ngClass]="{'is-invalid': !contactForm.controls['phone'].valid && contactForm.controls['phone'].touched}">                   
             <div class="invalid-feedback" >
-              Error phone
+              {{resources?.error.phone}}
             </div>
           </div>
 
           <div class="form-group">
-            <label for="Email" class="col-form-label">Email</label>
+            <label for="Email" class="col-form-label">{{resources?.contact.emailLabel}}</label>
             <input type="text" 
                    class="form-control" 
                    id="Email"
                    formControlName="email"
                    [ngClass]="{'is-invalid': !contactForm.controls['email'].valid && contactForm.controls['email'].touched}"> 
             <div class="invalid-feedback" >
-              Error mail
+              {{resources?.error.email}}
             </div>
           </div>
 
           <div class="form-group">
-            <label for="Message">Zpráva pro nás</label>
+            <label for="Message">{{resources?.contact.messageLabel}}</label>
             <div class="textarea-container">
               <textarea class="form-control" 
               id="Message" 
@@ -187,18 +182,18 @@
               [ngClass]="{'is-invalid': !contactForm.controls['message'].valid && contactForm.controls['message'].touched}"
               rows="8"></textarea>
               <div class="invalid-feedback" >
-                Error message
+                {{resources?.error.message}}
               </div>
             </div>
             
           </div>
 
           <div *ngIf="emailSent" class="form-group confirm-message">
-            Email uspesne odeslan
+            {{resources?.contact.emailSend}}
           </div>
 
           <div class="form-group float-right">
-            <button type="submit" class="button button-animation" [disabled]="!contactForm.valid">Odeslat</button>
+            <button type="submit" class="button button-animation" [disabled]="!contactForm.valid">{{resources?.contact.sendBtn}}</button>
           </div>
 
         </form>
@@ -206,7 +201,6 @@
 
       <div class="col-md-5">
         <p>&copy; 2017 Kongera.com<p>
-          {{resources?.error.name}}
       </div>
         
     </div>

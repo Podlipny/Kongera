@@ -250,13 +250,6 @@
   align-self: center
 }
 
-.about-content mark{
-  background-color: transparent;
-  font-family: 'roboto';
-  font-weight: 500;
-  color: #6f7c82;
-}
-
 /* --------------------------------------------- */
 /* Contact section */
 /* --------------------------------------------- */
@@ -430,7 +423,8 @@ textarea {
   color: #eceff1;
   cursor: pointer;
 	position: relative;
-	z-index: 1;
+  z-index: 1;
+  backface-visibility: hidden;
 	-webkit-backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transition: width 2s; /* Safari */
