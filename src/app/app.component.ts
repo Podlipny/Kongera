@@ -67,9 +67,9 @@ export class AppComponent implements OnInit  {
   }
 
   submitContact(message: Message) {
-    // this.mailService.sendMail(message).subscribe(res => {
-    //   this.emailSent = true;
-    // });
-    this.emailSent = true;
+    this.mailService.sendMail(message).subscribe(res => {
+      this.emailSent = true;
+    });
+    this.contactForm.reset();
   }
 }
