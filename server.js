@@ -41,8 +41,6 @@ class Server {
     });
   }
 
-  // router methods
-
   // returns index.html - kongera website
   getIndex(req, res) {
     res.sendFile(__dirname + '/public/index.html');
