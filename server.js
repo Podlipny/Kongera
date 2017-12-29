@@ -29,7 +29,7 @@ class Server {
   initRoutes() {
     var router = express.Router();
 
-    router.get('/', this.getIndex.bind(this));
+    router.get('*', this.getIndex.bind(this));
     router.post('/contact', this.sendMail.bind(this));
     
     app.use(router);
@@ -45,7 +45,7 @@ class Server {
 
   // returns index.html - kongera website
   getIndex(req, res) {
-    res.sendfile('../public/index.html');
+    res.sendFile(__dirname + '/public/index.html');
   }
 
   // send mail from client
