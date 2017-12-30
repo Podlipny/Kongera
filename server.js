@@ -95,7 +95,7 @@ class Server {
     });
 
     smtpTransport.close();
-    res.sendStatus(200);
+    res.send({success: "true", message: "Message sent!"});
   }
 
 }
