@@ -7,16 +7,27 @@
         </a>
       </h2>
       <nav>
-        <ul>
-          <li (click)="ScroolOnClick('about')">
-            <img src="../assets/light_bulb_red.png" alt="resources?.menu.about" />
-            <a>{{resources?.menu.about}}</a>
-          </li>
-          <li (click)="ScroolOnClick('contact')">
-            <img src="../assets/contact_red.png" alt="resources?.menu.contact" />
-            <a>{{resources?.menu.contact}}</a>
-          </li>
-        </ul>
+        <div class="nav-middle-warp">
+          <ul>
+            <li (click)="ScroolOnClick('about')">
+              <img src="../assets/light_bulb_red.png" alt="resources?.menu.about" />
+              <a>{{resources?.menu.about}}</a>
+            </li>
+            <li (click)="ScroolOnClick('contact')">
+              <img src="../assets/contact_red.png" alt="resources?.menu.contact" />
+              <a>{{resources?.menu.contact}}</a>
+            </li>          
+          </ul>
+          <ul class="language-nav">
+            <li routerLink="/en">
+              <a>EN</a>
+            </li>
+            <li>|</li>
+            <li routerLink="/sk">
+              <a>SK</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
   </div>

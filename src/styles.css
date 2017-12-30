@@ -129,21 +129,29 @@ header .row {
 
 header nav {
   display: flex;
-  flex-direction: column;  
+  flex-direction: row;  
+  justify-content: center;
+}
+
+header nav .nav-middle-warp{
+  display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
 header nav ul {
   display: flex;
+  flex-direction: row;  
+  align-content: center;
   font-family: 'roboto';
+  align-self: center;
   font-weight: 500;
   font-size: 15px;
-  flex-direction: row;  
-  justify-content: center;
   margin: 0px 0px 0px 0px;
 }
 
 header nav ul li {
+  display: flex;
   cursor: pointer;  
   vertical-align: middle;
   margin: 0px 40px 0px 0px;  
@@ -154,9 +162,29 @@ header nav ul li:hover {
 }
 
 header nav ul li a {
+  align-self: center;
   vertical-align: middle;
   color: #292e31;
   margin: 0px 0px 0px 10px;  
+}
+
+header .language-nav {
+  display: flex;
+  flex-direction: row;  
+  align-content: center;
+  font-family: 'roboto';
+  font-weight: 300;
+  font-size: 15px;
+}
+header .language-nav li {
+  cursor: pointer;  
+  vertical-align: middle;
+  margin: 0px 10px 0px 0px;  
+}
+header .language-nav li a {
+  vertical-align: middle;
+  color: #292e31;
+  margin: 0px 0px 0px 0px;  
 }
 
 section {
@@ -189,9 +217,15 @@ section {
     margin: 15px 0px 15px 0px;
   }
   
+  header nav .nav-middle-warp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
   header h2 {
     width: 100%;
-    margin: 15px 0px 15px 0px;    
+    margin: 20px 0px 15px 0px;    
     display: flex;
     flex-direction: column;
     align-content: center;
