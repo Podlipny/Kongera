@@ -93,7 +93,10 @@ class Server {
         console.log("Confirmation sent!");
       }
     });
+
+    smtpTransport.close();
   }
+
 }
 
 let server = new Server();
