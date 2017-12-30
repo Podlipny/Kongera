@@ -11,7 +11,15 @@
         "assets",
         "resources",
         "fonts",
-        "favicon.ico"
+        "favicon.ico",
+        "android-chrome-192x192.png",
+        "android-chrome-256x256.png",
+        "apple-touch-icon.png",
+        "browserconfig.xml",
+        "favicon-16x16.png",
+        "favicon-32x32.png",
+        "mstile-150x150.png",
+        "safari-pinned-tab.svg"
       ],
       "index": "index.html",
       "main": "main.ts",
