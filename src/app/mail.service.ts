@@ -11,6 +11,9 @@ export class MailService {
   constructor(private http: HttpClient) { }
 
   sendMail(message: Message): Observable<any> {
-    return this.http.post(environment.serverPath + '/contact', message);
+    return this.http.post(environment.serverPath + '/contact', message, {
+      headers: new HttpHeaders().set('Content-Type', 'application/json'),
+      responseType: 'text'
+   });
   }
 }
