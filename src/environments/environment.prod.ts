@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  serverPath: 'kongera.herokuapp.com'
+  serverPath: 'https://kongera.herokuapp.com'
 };
