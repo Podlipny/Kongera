@@ -95,6 +95,7 @@ class Server {
     });
 
     smtpTransport.close();
+    res.sendStatus(200);
   }
 
 }
