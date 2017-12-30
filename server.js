@@ -61,7 +61,7 @@ class Server {
       host: "smtp.gmail.com",
       auth: {
         user: "info@kongera.com",
-        pass: "**********"
+        pass: process.env.EMAILPASS || "**********"
       }
     });
 
