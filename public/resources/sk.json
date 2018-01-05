@@ -4,23 +4,23 @@
     "contact": "Kontakt"
   },
   "about": {
-    "header": "O společnosti Kongera",
+    "header": "O spoločnosti Kongera",
     "article": "Spoločnosť <mark>Kongera</mark> ponúka rozmanité riešenia v oblasti <mark>IT technológií</mark>. Špecializujeme sa na vývoj <mark>softwaru na mieru, vývoj mobilných aplikácii, spravovanie sietí, dodanie a správu hardwaru</mark> podľa požiadaviek klienta. Sme tím, ktorý prichádza s inovatívnymi a flexibilnými riešeniami pre rozvoj vášho podnikania."
   },
   "contact": {
     "header": "Kontakt",
-    "nameTitle": "Majitel",
-    "sendBtn": "Odeslat",
-    "nameLabel": "Jméno",
-    "phoneLabel": "Telefon",
+    "nameTitle": "Majiteľ",
+    "sendBtn": "Odoslať",
+    "nameLabel": "Meno",
+    "phoneLabel": "Telefón",
     "emailLabel": "Email",
-    "messageLabel": "Zpráva pro nás",
-    "emailSend": "Email úspěšne odeslán!"
+    "messageLabel": "Správa pre nás",
+    "emailSend": "Email úspešne odoslaný!"
   },
   "error": {
-    "name": "Jméno musí být vyplněno!",
-    "phone": "Telefon musí být vyplněn! Prosím vyplňte ve formátu +420 721 123 456",
-    "email":  "Email musí být vyplněn!",
-    "message":  "Zpráva pro nás musí být vyplněna!"
+    "name": "Meno musí byť vyplnené!",
+    "phone": "Telefón musí byť vyplnený! Prosím vyplňte vo formáte +421 XXX XXX XXX",
+    "email":  "Email musí byť vyplnený!",
+    "message":  "Správa pre nás musí byť vyplnená!"
   }
 }
